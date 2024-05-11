@@ -31,7 +31,7 @@ pipeline {
                 archiveArtifacts artifacts: 'webapp.zip', followSymlinks: false
             }
         }
-        stage('Config deploy'){
+        stage('Confirm to deploy'){
             steps {
                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
             }
